@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ListItemsComponent } from './list-items/list-items.component';
@@ -10,7 +12,9 @@ import { ListItemsComponent } from './list-items/list-items.component';
     ListItemsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
